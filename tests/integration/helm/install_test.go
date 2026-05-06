@@ -167,7 +167,7 @@ func TestRevisionedReleaseChannels(t *testing.T) {
 	valuesRevisioneRelease := map[string]interface{}{
 		"profile":         "stable",
 		"revision":        "1-x",
-		"defaultRevision": "",
+		"defaultRevision": "1-x",
 	}
 	revision := "1-x"
 	framework.

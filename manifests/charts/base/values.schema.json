@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$defs": {
+    "values": {
+      "type": "object",
+      "properties": {
+        "_internal_defaults_do_not_set": {
+          "type": "object"
+        },
+        "global": {
+          "type": "object"
+        },
+        "base": {
+          "type": "object"
+        },
+        "defaultRevision": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The default revision for the Istio control plane. Cannot be empty - use 'default' for the default revision or a specific revision name."
+        },
+        "experimental": {
+          "type": "object"
+        }
+      }
+    }
+  },
+  "defaults": {
+    "$ref": "#/$defs/values"
+  },
+  "$ref": "#/$defs/values"
+}
